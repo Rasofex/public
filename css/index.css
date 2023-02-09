@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:#1B1A17;
+  color: #F0E3CA;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-container {
+  max-width: 60%;
+  width: 100%;
+}
+
+.form-control {
+  margin: 4px;
+  background-color: #242320;
+  border: .05rem solid #FF8303;
+  border-radius: 4px;
+  color:#F0E3CA;
+  padding-left: 14px;
+}
+
+textarea { 
+  resize: none;
+  height: 0;
+  overflow:hidden
+}
+
+.form-control::placeholder{
+    color: #f0e3caa3;
+}
+
+.form-control:focus {
+    border-color: #FF8303;
+    box-shadow: 0 0 0 0.1rem rgb(163 87 9 / 20%);
+    background-color: #242320;
+    color:#F0E3CA;
+}
+
+.flexbtn {
+  height: 88px!important;
+}
+
+.btn {
+  margin: 4px;
+  border: 2px solid #FF8303;
+  color: #FF8303; 
+  font-weight: 700;
+  background-color: #1B1A17;
+}
+
+.btn:hover {
+  color: #FF8303;
+  border-color: #FF8303;
+}
+
+.btn:active{
+  color: #FF8303;
+  border-color: #FF8303;
+  box-shadow: 0 0 0 0.1rem rgb(163 87 9 / 20%);
+}
+
+.btn:focus{
+  color: #FF8303!important;
+  border-color: #FF8303!important;
+} 
+
+.cltr {
+  width: 85%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.cntr {
+  padding: 0;
+  width: 15%;
+}
+
+.task {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-hr {
+  width: 64px;
+  height: 0px;
+  border-radius: 4px;
+  border: 2px solid #FF8303;
+  margin: 0;
+}
+
+.task-status {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  font-size: 24px;
+  padding: 0 12px 3px;
+}
+
+.task-create {
+  margin-bottom: 72px;
+  padding-right: 0;
+}
+
+.tsk-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  gap: 16px;
+  background: #242320;
+  border: 2px solid #A35709;
+  border-radius: 8px;
+  color: #F0E3CA;
+  margin: 6px 0;
+}
+
+.tsk-info {
+  max-width: 80%;
+  width: 80%;
+  padding: 0;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
+
+.btn-flx {
+  margin: 0;
+  background-color: #1B1A17;
+}
+
+.tsk-title {
+  font-size: 22px;
+  font-weight: 500;
+  max-width: 100%!important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.tsk-description {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 100%!important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.tsk-control {
+  display: flex;
+  align-items: center;
+  width: min-content;
+  padding: 0;
+  margin: 0;
+}
