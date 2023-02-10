@@ -72,12 +72,14 @@ function deleteTask(taskId) {
     if (task) {
         task.remove();
         let nonetsk = document.querySelectorAll(`.tsk-container`).length==0
+
         if (nonetsk) {
             taskArea.innerHTML =  `
             <hr class="task-hr opacity-100">
             <div class="task-status">No tasks</div>
             <hr class="task-hr opacity-100">
             `
+
         }
     }
 }
